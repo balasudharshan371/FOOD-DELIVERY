@@ -6,7 +6,8 @@ spring:
     name: foodiehub-backend
   data:
     mongodb:
-      uri: ${MONGODB_URI:mongodb://localhost:27017/foodiehub}
+      uri: ${MONGODB_URI:${SPRING_DATA_MONGODB_URI:mongodb://localhost:27017/foodiehub}}
+      database: ${MONGODB_DATABASE:foodiehub}
       auto-index-creation: true
 
 app:
