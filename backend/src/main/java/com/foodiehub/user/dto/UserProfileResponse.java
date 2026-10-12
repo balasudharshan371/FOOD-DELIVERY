@@ -1,0 +1,25 @@
+package com.foodiehub.user.dto;
+
+import com.foodiehub.user.Address;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.Instant;
+import java.util.List;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserProfileResponse {
+    private String id;
+    private String fullName;
+    private String email;
+    private String phone;
+    private String role;
+    private String accountStatus;
+    private List<Address> addresses;
+    private Instant createdAt;
+}

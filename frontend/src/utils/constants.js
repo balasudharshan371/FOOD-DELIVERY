@@ -1,0 +1,21 @@
+export const ROLES = {
+  ADMIN: 'ROLE_ADMIN',
+  OWNER: 'ROLE_OWNER',
+  CUSTOMER: 'ROLE_CUSTOMER',
+}
+
+export const ORDER_STATUSES = [
+  'PENDING',
+  'CONFIRMED',
+  'PREPARING',
+  'OUT_FOR_DELIVERY',
+  'DELIVERED',
+  'CANCELLED',
+  'REJECTED',
+]
+
+export const FOOD_TYPES = ['VEG', 'NON_VEG', 'VEGAN']
+
+export const PAYMENT_METHODS = ['CASH_ON_DELIVERY', 'UPI', 'CARD']
+
+export const DISCOUNT_TYPES = ['PERCENTAGE', 'FLAT']

@@ -1,0 +1,39 @@
+# FoodieHub .gitignore
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDE & Editors
+.idea/
+*.iml
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Java / Maven Build Artifacts
+backend/target/
+backend/*.jar
+backend/*.war
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Node / Frontend Build Artifacts
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env.local
+frontend/.env.*.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Environment & Secret Files
+*.env
+*.env.development
+*.env.production
+!*.env.example
+
+# Logs
+logs/
+*.log
